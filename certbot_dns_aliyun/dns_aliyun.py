@@ -20,7 +20,7 @@ class Authenticator(dns_common.DNSAuthenticator):
     """
 
     description = 'Obtain certificates using a DNS TXT record (if you are using Aliyun DNS).'
-    ttl = 600
+    ttl = 60
     _alidns_client = None
 
     def __init__(self, *args, **kwargs):
